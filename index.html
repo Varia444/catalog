@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laelin Jewelry - Каталог</title>
+    <title>Pomegranate Jewelry - Каталог</title>
     
     <!-- Подключение Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,23 +17,26 @@
 <body class="bg-white text-gray-800">
 
     <!-- 1. ШАПКА -->
-    <header class="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1400px] mx-auto border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur-sm z-50">
-        <a href="#" class="text-3xl font-serif-italic text-brand-pink font-bold">laelin</a>
+    <header class="flex justify-between items-center px-6 md:px-12 py-4 max-w-[1400px] mx-auto border-b border-gray-100 sticky top-0 bg-white z-50">
+        <a href="#" class="flex items-center">
+            <!-- Фильтры contrast и brightness убирают серый фон JPG -->
+            <img src="photo/11.jpg" alt="Pomegranate Logo" class="h-12 md:h-14 w-auto mix-blend-multiply contrast-150 brightness-110">
+        </a>
         
         <nav class="hidden md:flex space-x-8 text-sm text-gray-600 font-medium">
-            <a href="#collections" class="hover:text-brand-pink transition">Коллекции</a>
-            <a href="#catalog" class="hover:text-brand-pink transition">Каталог</a>
-            <a href="#customers" class="hover:text-brand-pink transition">Клиентам</a>
-            <a href="#about" class="hover:text-brand-pink transition">О бренде</a>
+            <a href="#collections" class="hover:text-brand-red transition">Коллекции</a>
+            <a href="#catalog" class="hover:text-brand-red transition">Каталог</a>
+            <a href="#customers" class="hover:text-brand-red transition">Клиентам</a>
+            <a href="#about" class="hover:text-brand-red transition">О бренде</a>
         </nav>
     </header>
 
     <!-- 2. ГЛАВНЫЙ ЭКРАН -->
-    <section class="max-w-[1400px] mx-auto px-4 md:px-8 py-12 flex flex-col md:flex-row items-center bg-[#fafafa] rounded-3xl mt-6 relative overflow-hidden">
+    <section class="max-w-[1400px] mx-auto px-4 md:px-8 py-12 flex flex-col md:flex-row items-center bg-[#fff8f8] rounded-3xl mt-6 relative overflow-hidden">
         <div class="w-full md:w-1/2 z-10 pl-4 md:pl-12 py-8">
             <h1 class="text-4xl md:text-6xl font-medium leading-tight mb-4 text-gray-900">
                 Трогательные<br>украшения<br>
-                <span class="font-serif-italic text-brand-pink">с ароматом весны</span>
+                <span class="font-serif-italic text-brand-red">с ароматом весны</span>
             </h1>
             <p class="text-sm text-gray-500 mb-8 max-w-xs">
                 Выберите то, что расскажет вашу историю
@@ -51,24 +54,24 @@
     <section id="collections" class="max-w-[1400px] mx-auto px-4 md:px-8 py-16">
         <div class="flex justify-between items-end mb-10">
             <h2 class="text-3xl font-medium">Наши коллекции</h2>
-            <button data-filter="all" class="filter-btn text-sm text-gray-500 hover:text-brand-pink underline underline-offset-4 transition">Сбросить фильтр</button>
+            <button data-filter="all" class="filter-btn text-sm text-gray-500 hover:text-brand-red underline underline-offset-4 transition">Сбросить фильтр</button>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Коллекция 1 -->
-            <div data-filter="col-spring" class="filter-btn bg-gray-50 rounded-3xl p-8 flex flex-col items-center text-center group cursor-pointer hover:shadow-lg hover:bg-[#fff0f3] transition duration-300">
-                <img src="photo/5440747168101768106.jpg" alt="Весенняя коллекция" class="w-48 h-48 object-contain mb-6 group-hover:scale-110 transition duration-500">
+            <div data-filter="col-spring" class="filter-btn bg-gray-50 rounded-3xl p-8 flex flex-col items-center text-center group cursor-pointer hover:shadow-lg hover:bg-[#fff8f8] transition duration-300">
+                <img src="photo/5440747168101768106.jpg" alt="Весенняя коллекция" class="w-48 h-48 object-contain mb-6 group-hover:scale-110 transition duration-500 mix-blend-multiply">
                 <h3 class="text-xl font-medium mb-2">Весенняя</h3>
                 <p class="text-sm text-gray-500">Легкость и пробуждение природы</p>
             </div>
             <!-- Коллекция 2 -->
-            <div data-filter="col-classic" class="filter-btn bg-gray-50 rounded-3xl p-8 flex flex-col items-center text-center group cursor-pointer hover:shadow-lg hover:bg-[#fff0f3] transition duration-300">
-                <img src="photo/5440747168101768110.jpg" alt="Классика" class="w-48 h-48 object-contain mb-6 group-hover:scale-110 transition duration-500">
+            <div data-filter="col-classic" class="filter-btn bg-gray-50 rounded-3xl p-8 flex flex-col items-center text-center group cursor-pointer hover:shadow-lg hover:bg-[#fff8f8] transition duration-300">
+                <img src="photo/5440747168101768110.jpg" alt="Классика" class="w-48 h-48 object-contain mb-6 group-hover:scale-110 transition duration-500 mix-blend-multiply">
                 <h3 class="text-xl font-medium mb-2">Классика</h3>
                 <p class="text-sm text-gray-500">Вечные ценности и строгие формы</p>
             </div>
             <!-- Коллекция 3 -->
-            <div data-filter="col-minimal" class="filter-btn bg-gray-50 rounded-3xl p-8 flex flex-col items-center text-center group cursor-pointer hover:shadow-lg hover:bg-[#fff0f3] transition duration-300">
-                <img src="photo/5440747168101768121.jpg" alt="Минимализм" class="w-48 h-48 object-contain mb-6 group-hover:scale-110 transition duration-500">
+            <div data-filter="col-minimal" class="filter-btn bg-gray-50 rounded-3xl p-8 flex flex-col items-center text-center group cursor-pointer hover:shadow-lg hover:bg-[#fff8f8] transition duration-300">
+                <img src="photo/5440747168101768121.jpg" alt="Минимализм" class="w-48 h-48 object-contain mb-6 group-hover:scale-110 transition duration-500 mix-blend-multiply">
                 <h3 class="text-xl font-medium mb-2">Минимализм</h3>
                 <p class="text-sm text-gray-500">Акценты на главном</p>
             </div>
@@ -82,7 +85,7 @@
         <aside class="w-full lg:w-1/4 flex-shrink-0">
             <div class="sticky top-24 bg-gray-50 p-6 rounded-2xl max-h-[85vh] overflow-y-auto custom-scroll">
                 
-                <button data-filter="all" class="filter-btn w-full text-left font-medium mb-6 pb-4 border-b border-gray-200 hover:text-brand-pink transition text-lg">
+                <button data-filter="all" class="filter-btn w-full text-left font-medium mb-6 pb-4 border-b border-gray-200 hover:text-brand-red transition text-lg">
                     Все украшения
                 </button>
                 
@@ -90,15 +93,15 @@
                     <!-- Кольца -->
                     <li>
                         <details class="group">
-                            <summary class="font-medium cursor-pointer hover:text-brand-pink flex justify-between items-center">Кольца <span class="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span></summary>
+                            <summary class="font-medium cursor-pointer hover:text-brand-red flex justify-between items-center">Кольца <span class="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span></summary>
                             <ul class="mt-2 space-y-2 pl-4 text-gray-500 border-l border-gray-200 ml-2">
-                                <li><button data-filter="rings" class="filter-btn hover:text-brand-pink text-left w-full font-medium">Все кольца</button></li>
-                                <li><button data-filter="wedding" class="filter-btn hover:text-brand-pink text-left w-full">Обручальные кольца</button></li>
-                                <li><button data-filter="engagement" class="filter-btn hover:text-brand-pink text-left w-full">Помолвочные кольца</button></li>
-                                <li><button data-filter="gems" class="filter-btn hover:text-brand-pink text-left w-full">Кольца с драгоценными камнями</button></li>
-                                <li><button data-filter="pearls" class="filter-btn hover:text-brand-pink text-left w-full">Кольца с жемчугом</button></li>
-                                <li><button data-filter="fine" class="filter-btn hover:text-brand-pink text-left w-full">Ювелирные кольца</button></li>
-                                <li><button data-filter="signet" class="filter-btn hover:text-brand-pink text-left w-full">Кольца печатки</button></li>
+                                <li><button data-filter="rings" class="filter-btn hover:text-brand-red text-left w-full font-medium">Все кольца</button></li>
+                                <li><button data-filter="wedding" class="filter-btn hover:text-brand-red text-left w-full">Обручальные кольца</button></li>
+                                <li><button data-filter="engagement" class="filter-btn hover:text-brand-red text-left w-full">Помолвочные кольца</button></li>
+                                <li><button data-filter="gems" class="filter-btn hover:text-brand-red text-left w-full">Кольца с драгоценными камнями</button></li>
+                                <li><button data-filter="pearls" class="filter-btn hover:text-brand-red text-left w-full">Кольца с жемчугом</button></li>
+                                <li><button data-filter="fine" class="filter-btn hover:text-brand-red text-left w-full">Ювелирные кольца</button></li>
+                                <li><button data-filter="signet" class="filter-btn hover:text-brand-red text-left w-full">Кольца печатки</button></li>
                             </ul>
                         </details>
                     </li>
@@ -106,12 +109,12 @@
                     <!-- Серьги -->
                     <li>
                         <details class="group">
-                            <summary class="font-medium cursor-pointer hover:text-brand-pink flex justify-between items-center">Серьги <span class="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span></summary>
+                            <summary class="font-medium cursor-pointer hover:text-brand-red flex justify-between items-center">Серьги <span class="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span></summary>
                             <ul class="mt-2 space-y-2 pl-4 text-gray-500 border-l border-gray-200 ml-2">
-                                <li><button data-filter="earrings" class="filter-btn hover:text-brand-pink text-left w-full font-medium">Все серьги</button></li>
-                                <li><button data-filter="studs" class="filter-btn hover:text-brand-pink text-left w-full">Пуссеты</button></li>
-                                <li><button data-filter="drops" class="filter-btn hover:text-brand-pink text-left w-full">Серьги-подвески</button></li>
-                                <li><button data-filter="clips" class="filter-btn hover:text-brand-pink text-left w-full">Клипсы</button></li>
+                                <li><button data-filter="earrings" class="filter-btn hover:text-brand-red text-left w-full font-medium">Все серьги</button></li>
+                                <li><button data-filter="studs" class="filter-btn hover:text-brand-red text-left w-full">Пуссеты</button></li>
+                                <li><button data-filter="drops" class="filter-btn hover:text-brand-red text-left w-full">Серьги-подвески</button></li>
+                                <li><button data-filter="clips" class="filter-btn hover:text-brand-red text-left w-full">Клипсы</button></li>
                             </ul>
                         </details>
                     </li>
@@ -119,22 +122,22 @@
                     <!-- Цепи и браслеты -->
                     <li>
                         <details class="group">
-                            <summary class="font-medium cursor-pointer hover:text-brand-pink flex justify-between items-center">Цепи и браслеты <span class="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span></summary>
+                            <summary class="font-medium cursor-pointer hover:text-brand-red flex justify-between items-center">Цепи и браслеты <span class="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span></summary>
                             <ul class="mt-2 space-y-2 pl-4 text-gray-500 border-l border-gray-200 ml-2">
-                                <li><button data-filter="bracelets" class="filter-btn hover:text-brand-pink text-left w-full font-medium">Все цепи и браслеты</button></li>
-                                <li><button data-filter="bangles" class="filter-btn hover:text-brand-pink text-left w-full">Жесткие (браслеты)</button></li>
+                                <li><button data-filter="bracelets" class="filter-btn hover:text-brand-red text-left w-full font-medium">Все цепи и браслеты</button></li>
+                                <li><button data-filter="bangles" class="filter-btn hover:text-brand-red text-left w-full">Жесткие (браслеты)</button></li>
                                 
                                 <!-- 3-й уровень: Мягкие цепочки -->
                                 <li>
                                     <details class="group">
-                                        <summary class="cursor-pointer hover:text-brand-pink flex justify-between items-center">
+                                        <summary class="cursor-pointer hover:text-brand-red flex justify-between items-center">
                                             Мягкие (цепочки) <span class="text-[10px] text-gray-400 group-open:rotate-180 transition-transform">▼</span>
                                         </summary>
                                         <ul class="mt-2 space-y-2 pl-3 text-xs border-l-2 border-gray-300 ml-2">
-                                            <li><button data-filter="chains" class="filter-btn hover:text-brand-pink text-left w-full font-medium">Все мягкие</button></li>
-                                            <li><button data-filter="weave-bismarck" class="filter-btn hover:text-brand-pink text-left w-full">Плетение бисмарк</button></li>
-                                            <li><button data-filter="weave-anchor" class="filter-btn hover:text-brand-pink text-left w-full">Плетение якорное</button></li>
-                                            <li><button data-filter="weave-cardigan" class="filter-btn hover:text-brand-pink text-left w-full">Плетение кардиган</button></li>
+                                            <li><button data-filter="chains" class="filter-btn hover:text-brand-red text-left w-full font-medium">Все мягкие</button></li>
+                                            <li><button data-filter="weave-bismarck" class="filter-btn hover:text-brand-red text-left w-full">Плетение бисмарк</button></li>
+                                            <li><button data-filter="weave-anchor" class="filter-btn hover:text-brand-red text-left w-full">Плетение якорное</button></li>
+                                            <li><button data-filter="weave-cardigan" class="filter-btn hover:text-brand-red text-left w-full">Плетение кардиган</button></li>
                                         </ul>
                                     </details>
                                 </li>
@@ -145,13 +148,13 @@
                     <!-- Подвески -->
                     <li>
                         <details class="group">
-                            <summary class="font-medium cursor-pointer hover:text-brand-pink flex justify-between items-center">Подвески и кулоны <span class="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span></summary>
+                            <summary class="font-medium cursor-pointer hover:text-brand-red flex justify-between items-center">Подвески и кулоны <span class="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span></summary>
                             <ul class="mt-2 space-y-2 pl-4 text-gray-500 border-l border-gray-200 ml-2">
-                                <li><button data-filter="pendants" class="filter-btn hover:text-brand-pink text-left w-full font-medium">Все подвески</button></li>
-                                <li><button data-filter="zodiac" class="filter-btn hover:text-brand-pink text-left w-full">Знаки Зодиака</button></li>
-                                <li><button data-filter="stones" class="filter-btn hover:text-brand-pink text-left w-full">Драгоценные камни</button></li>
-                                <li><button data-filter="animals" class="filter-btn hover:text-brand-pink text-left w-full">Животные</button></li>
-                                <li><button data-filter="letters" class="filter-btn hover:text-brand-pink text-left w-full">Буквы и символы</button></li>
+                                <li><button data-filter="pendants" class="filter-btn hover:text-brand-red text-left w-full font-medium">Все подвески</button></li>
+                                <li><button data-filter="zodiac" class="filter-btn hover:text-brand-red text-left w-full">Знаки Зодиака</button></li>
+                                <li><button data-filter="stones" class="filter-btn hover:text-brand-red text-left w-full">Драгоценные камни</button></li>
+                                <li><button data-filter="animals" class="filter-btn hover:text-brand-red text-left w-full">Животные</button></li>
+                                <li><button data-filter="letters" class="filter-btn hover:text-brand-red text-left w-full">Буквы и символы</button></li>
                             </ul>
                         </details>
                     </li>
@@ -170,210 +173,210 @@
                 <!-- ТОВАР 1 -->
                 <div class="product-item rings gems col-classic wedding bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Серебро</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768107.jpg" alt="Кольцо дорожка" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768107.jpg" alt="Кольцо дорожка" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Кольца</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Кольцо-дорожка с камнями по кругу</h3>
-                        <p class="text-brand-pink font-semibold">3 000 ₽</p>
+                        <p class="text-brand-red font-semibold">3 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 2 -->
                 <div class="product-item rings gems col-spring pearls bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Серебро</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768106.jpg" alt="Кольцо Бабочка" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768106.jpg" alt="Кольцо Бабочка" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Кольца</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Кольцо с фианитами «Бабочка»</h3>
-                        <p class="text-brand-pink font-semibold">1 500 ₽</p>
+                        <p class="text-brand-red font-semibold">1 500 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 3 -->
                 <div class="product-item rings engagement col-classic bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Золото</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768105.jpg" alt="Кольцо Сердце" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768105.jpg" alt="Кольцо Сердце" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Кольца</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Кольцо «Сердце» с фианитом</h3>
-                        <p class="text-brand-pink font-semibold">20 000 ₽</p>
+                        <p class="text-brand-red font-semibold">20 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 4 -->
                 <div class="product-item rings gems col-minimal fine bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Золото</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768108.jpg" alt="Кольцо волна" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768108.jpg" alt="Кольцо волна" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Кольца</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Кольцо-волна с россыпью фианитов</h3>
-                        <p class="text-brand-pink font-semibold">35 000 ₽</p>
+                        <p class="text-brand-red font-semibold">35 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 5 -->
                 <div class="product-item pendants letters col-spring bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Серебро</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768109.jpg" alt="Подвеска сердце" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768109.jpg" alt="Подвеска сердце" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Подвески</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Подвеска-сердце</h3>
-                        <p class="text-brand-pink font-semibold">4 000 ₽</p>
+                        <p class="text-brand-red font-semibold">4 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 6 -->
                 <div class="product-item pendants stones col-classic bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Серебро</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768110.jpg" alt="Подвеска квадрат" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768110.jpg" alt="Подвеска квадрат" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Подвески</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Подвеска с квадратным фианитом</h3>
-                        <p class="text-brand-pink font-semibold">2 500 ₽</p>
+                        <p class="text-brand-red font-semibold">2 500 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 7 -->
                 <div class="product-item pendants col-spring bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Золото</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768111.jpg" alt="Подвеска завиток" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768111.jpg" alt="Подвеска завиток" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Подвески</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Подвеска «Золотой завиток»</h3>
-                        <p class="text-brand-pink font-semibold">15 000 ₽</p>
+                        <p class="text-brand-red font-semibold">15 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 8 -->
                 <div class="product-item pendants stones col-minimal bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Золото</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768112.jpg" alt="Подвеска изумруд" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768112.jpg" alt="Подвеска изумруд" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Подвески</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Подвеска с изумрудом и фианитом</h3>
-                        <p class="text-brand-pink font-semibold">18 000 ₽</p>
+                        <p class="text-brand-red font-semibold">18 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 9 -->
                 <div class="product-item earrings drops col-spring bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Серебро</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768119.jpg" alt="Серьги Эйфелева башня" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768119.jpg" alt="Серьги Эйфелева башня" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Серьги</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Серьги «Эйфелева башня» с жемчугом</h3>
-                        <p class="text-brand-pink font-semibold">3 500 ₽</p>
+                        <p class="text-brand-red font-semibold">3 500 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 10 -->
                 <div class="product-item earrings studs col-classic bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Золото</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768120.jpg" alt="Серьги конго гладкие" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768120.jpg" alt="Серьги конго гладкие" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Серьги</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Серьги-конго гладкие без вставок</h3>
-                        <p class="text-brand-pink font-semibold">25 000 ₽</p>
+                        <p class="text-brand-red font-semibold">25 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 11 -->
                 <div class="product-item earrings studs col-classic bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Золото</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768121.jpg" alt="Серьги конго с камнями" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768121.jpg" alt="Серьги конго с камнями" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Серьги</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Серьги-конго с кастом из фианитов</h3>
-                        <p class="text-brand-pink font-semibold">30 000 ₽</p>
+                        <p class="text-brand-red font-semibold">30 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 12 -->
                 <div class="product-item bracelets bangles col-minimal bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Серебро</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768125.jpg" alt="Браслет кафф" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768125.jpg" alt="Браслет кафф" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Браслеты</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Браслет-кафф с текстурированным узором</h3>
-                        <p class="text-brand-pink font-semibold">5 000 ₽</p>
+                        <p class="text-brand-red font-semibold">5 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 13 (Бисмарк) -->
                 <div class="product-item bracelets chains weave-bismarck col-minimal bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Серебро</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768126.jpg" alt="Цепочка фигурная" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768126.jpg" alt="Цепочка фигурная" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Цепи</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Цепочка с фигурными звеньями (Бисмарк)</h3>
-                        <p class="text-brand-pink font-semibold">2 000 ₽</p>
+                        <p class="text-brand-red font-semibold">2 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 14 (Якорное) -->
                 <div class="product-item bracelets chains weave-anchor col-classic bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Золото</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768127.jpg" alt="Цепочка шнурок" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768127.jpg" alt="Цепочка шнурок" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Цепи</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Цепочка «Шнурок» (Якорное)</h3>
-                        <p class="text-brand-pink font-semibold">20 000 ₽</p>
+                        <p class="text-brand-red font-semibold">20 000 ₽</p>
                     </div>
                 </div>
 
                 <!-- ТОВАР 15 (Кардиган) -->
                 <div class="product-item bracelets chains weave-cardigan col-minimal bg-gray-50 rounded-2xl p-4 flex flex-col group relative">
                     <span class="absolute top-4 left-4 bg-white text-gray-600 text-[10px] font-semibold px-2 py-1 rounded-md shadow-sm z-10">Золото</span>
-                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-pink shadow-sm z-10">♡</button>
+                    <button class="absolute top-4 right-4 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-brand-red shadow-sm z-10">♡</button>
                     <div class="aspect-square w-full mb-4 overflow-hidden rounded-xl flex items-center justify-center bg-white">
-                        <img src="photo/5440747168101768128.jpg" alt="Цепочка плоская" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300">
+                        <img src="photo/5440747168101768128.jpg" alt="Цепочка плоская" class="object-contain w-full h-full p-2 group-hover:scale-105 transition duration-300 mix-blend-multiply">
                     </div>
                     <div class="mt-auto">
                         <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1">Цепи</span>
                         <h3 class="text-sm font-medium leading-tight mb-2">Цепочка плоского плетения (Кардиган)</h3>
-                        <p class="text-brand-pink font-semibold">32 000 ₽</p>
+                        <p class="text-brand-red font-semibold">32 000 ₽</p>
                     </div>
                 </div>
 
@@ -395,15 +398,15 @@
             <h2 class="text-3xl font-medium mb-10 text-center">Клиентам</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <h3 class="text-lg font-semibold mb-3 text-brand-pink">Доставка</h3>
+                    <h3 class="text-lg font-semibold mb-3 text-brand-red">Доставка</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">Бережно упаковываем каждый заказ в фирменную коробочку. Доставка по всей России от 2 до 5 рабочих дней. При заказе от 5000 ₽ — бесплатно.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <h3 class="text-lg font-semibold mb-3 text-brand-pink">Оплата</h3>
+                    <h3 class="text-lg font-semibold mb-3 text-brand-red">Оплата</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">Принимаем к оплате банковские карты, СБП, а также наличные при получении в пунктах выдачи заказов.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <h3 class="text-lg font-semibold mb-3 text-brand-pink">Возврат и обмен</h3>
+                    <h3 class="text-lg font-semibold mb-3 text-brand-red">Возврат и обмен</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">Вы можете обменять или вернуть украшение надлежащего качества в течение 14 дней с момента получения, при сохранении бирок.</p>
                 </div>
             </div>
@@ -412,7 +415,7 @@
 
     <!-- 6. О БРЕНДЕ -->
     <section id="about" class="max-w-[1400px] mx-auto px-4 md:px-8 py-16">
-        <div class="bg-[#fff0f3] rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center relative overflow-hidden">
+        <div class="bg-[#fff8f8] rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center relative overflow-hidden">
             <div class="w-full md:w-2/3 relative z-10">
                 <h2 class="text-3xl md:text-5xl leading-tight text-gray-800 mb-6 font-medium">
                     Мы черпаем <span class="font-serif-italic">вдохновение</span> в мягких<br>
@@ -421,38 +424,28 @@
                     которая пробуждает <span class="font-serif-italic">всё вокруг</span>
                 </h2>
                 <p class="text-sm text-gray-600 mb-8 max-w-lg">
-                    Бренд Laelin создает украшения, которые становятся продолжением вашей истории. Мы используем только качественные материалы: золото, серебро, природные камни и фианиты высшей пробы.
+                    Бренд Pomegranate создает украшения, которые становятся продолжением вашей истории. Мы используем только качественные материалы: золото, серебро, природные камни и фианиты высшей пробы.
                 </p>
-                <a href="#catalog" class="inline-block bg-[#d2e3a5] text-gray-800 px-8 py-3 rounded-xl text-sm font-semibold hover:bg-[#c2d695] transition">
+                <a href="#catalog" class="inline-block bg-[#a3c293] text-gray-800 px-8 py-3 rounded-xl text-sm font-semibold hover:bg-[#8fb07e] transition">
                     ВЕРНУТЬСЯ К КАТАЛОГУ
                 </a>
             </div>
             
-            <div class="hidden md:block w-1/3 absolute right-12 bottom-[-20px] pointer-events-none">
-                <svg width="200" height="300" viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 60 L50 150" stroke="#fb95a8" stroke-width="7" stroke-linecap="round"/>
-                    <path d="M50 115 Q20 110 25 75" stroke="#fb95a8" stroke-width="7" stroke-linecap="round"/>
-                    <circle cx="32" cy="32" r="22" fill="#fb95a8"/>
-                    <circle cx="68" cy="32" r="22" fill="#fb95a8"/>
-                    <circle cx="32" cy="68" r="22" fill="#fb95a8"/>
-                    <circle cx="68" cy="68" r="22" fill="#fb95a8"/>
-                    <circle cx="50" cy="50" r="10" fill="#fff0f3"/>
-                </svg>
+            <div class="hidden md:block w-1/3 absolute right-12 bottom-[-20px] pointer-events-none opacity-20">
+                <img src="photo/11.jpg" alt="Pomegranate" class="w-64 h-64 object-contain mix-blend-multiply rotate-12">
             </div>
         </div>
     </section>
 
     <!-- 7. ПОДВАЛ -->
-    <footer class="bg-[#fb95a8] text-white pt-16 pb-8 relative overflow-hidden mt-12">
+    <footer class="bg-brand-red text-white pt-16 pb-16 relative overflow-hidden mt-12">
         
-        <!-- Огромный полупрозрачный логотип на фоне -->
-        <div class="absolute bottom-0 left-0 w-full flex justify-center overflow-hidden pointer-events-none select-none translate-y-[25%] opacity-20">
-            <span class="text-[25vw] leading-none font-serif-italic font-bold text-white">laelin</span>
+        <div class="absolute bottom-0 left-0 w-full flex justify-center overflow-hidden pointer-events-none select-none">
+            <span class="text-[13vw] leading-none font-serif-italic font-bold text-white/10 uppercase tracking-wider whitespace-nowrap translate-y-[20%]">Pomegranate</span>
         </div>
 
         <div class="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
             
-            <!-- Верхняя часть с колонками и иконками -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
                 
                 <!-- Колонка 1 -->
@@ -481,46 +474,39 @@
                 <div>
                     <h4 class="text-white/60 text-xs font-semibold tracking-wider uppercase mb-5">Наш магазин</h4>
                     <p class="text-sm font-medium leading-relaxed">
-                        Кыргызстан, г. Бишкек<br>
-                        проспект Юнусалиева 177/2<br>
+                        Россия, г. Иркутск<br>
+                        ул. Ленина, д. 15<br>
                         <span class="text-white/80 text-xs mt-2 inline-block">ежедневно с 10:00 до 20:30</span>
                     </p>
                 </div>
 
-                <!-- Колонка 4 -->
+                <!-- Колонка 4 (Обновленные контакты и иконки) -->
                 <div class="relative">
                     <h4 class="text-white/60 text-xs font-semibold tracking-wider uppercase mb-5">Быстрая связь</h4>
                     <div class="space-y-2 text-sm font-medium">
-                        <a href="tel:+996709030316" class="block hover:text-white/80 transition">+996 709 030 316</a>
-                        <a href="mailto:laelinjewelry@gmail.com" class="block hover:text-white/80 transition">laelinjewelry@gmail.com</a>
+                        <a href="tel:+79834639098" class="block hover:text-white/80 transition">+7 983 463 9098</a>
+                        <a href="mailto:varvara.eliz@yandex.ru" class="block hover:text-white/80 transition">varvara.eliz@yandex.ru</a>
                     </div>
                     
-                    <!-- Социальные сети (Иконки) -->
+                    <!-- Социальные сети (Только Telegram и Instagram) -->
                     <div class="flex space-x-4 mt-6">
                         <!-- Telegram -->
-                        <a href="#" class="hover:scale-110 transition">
+                        <a href="https://t.me/ElizarovaVarvara" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition">
                             <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
                         </a>
-                        <!-- WhatsApp -->
-                        <a href="#" class="hover:scale-110 transition">
-                            <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.652a11.882 11.882 0 005.713 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        </a>
-                        <!-- Instagram -->
-                        <a href="#" class="hover:scale-110 transition">
+                        <!-- Instagram (Ваша ссылка) -->
+                        <a href="https://www.instagram.com/varvara.eliz?exln=a3dyY2gya3VteDY4" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition">
                             <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        </a>
-                        <!-- VK -->
-                        <a href="#" class="hover:scale-110 transition">
-                            <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.83 16.653c-.084.223-.195.408-.332.556-.137.148-.3.262-.49.342a1.9 1.9 0 01-.693.12h-2.11c-.43 0-.86-.12-1.29-.36a5.614 5.614 0 01-1.14-1.056 16.924 16.924 0 01-1.035-1.453 13.547 13.547 0 01-.85-1.527 3.56 3.56 0 01-.207-.75c-.025-.14-.01-.246.045-.317.055-.07.152-.105.29-.105h2.11c.14 0 .262.043.366.128.104.085.175.204.213.357l.28.84c.076.23.18.444.312.643.132.199.28.375.444.527.164.152.336.273.516.363.18.09.352.135.516.135.164 0 .293-.045.386-.135a.71.71 0 00.14-.386V13.15c0-.23-.072-.418-.217-.566-.145-.148-.356-.222-.633-.222h-.272c-.277 0-.492-.09-.644-.27a1.01 1.01 0 01-.23-.653c0-.24.07-.46.21-.658.14-.198.348-.35.623-.457a3.613 3.613 0 011.024-.16h1.526c.5 0 .875.125 1.125.375.25.25.375.625.375 1.125v3.076c0 .174.04.31.12.406.08.096.202.145.366.145.15 0 .32-.06.51-.18.19-.12.36-.28.51-.48.15-.2.285-.42.405-.66.12-.24.21-.49.27-.75.012-.06.038-.11.078-.15a.183.183 0 01.138-.06h2.11c.14 0 .242.035.307.105.065.07.09.175.075.315a3.228 3.228 0 01-.188.765 6.098 6.098 0 01-.443 1.005 6.885 6.885 0 01-.693.99 5.436 5.436 0 01-.933.835c-.36.245-.723.395-1.09.45.36.08.71.255 1.05.525.34.27.65.59.93.96.28.37.52.76.72 1.17.2.41.33.8.39 1.17.03.15.015.28-.045.39z"/></svg>
                         </a>
                     </div>
                 </div>
             </div>
 
             <!-- Нижняя часть (Юридическая информация) -->
-            <div class="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/20 text-[11px] md:text-xs text-white/60">
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 mt-12 border-t border-white/20 text-[11px] md:text-xs text-white/70 relative z-10">
                 <a href="#" class="hover:text-white transition">Политика конфиденциальности</a>
-                <a href="#" class="hover:text-white transition mt-2 md:mt-0">Договор оферты</a>
+                <a href="#" class="hover:text-white transition mt-3 md:mt-0">Договор оферты</a>
+                <p class="mt-3 md:mt-0">&copy; 2024 Pomegranate. Все права защищены.</p>
             </div>
 
         </div>

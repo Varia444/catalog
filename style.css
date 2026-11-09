@@ -9,12 +9,12 @@ body {
     font-style: italic; 
 }
 
-/* Фирменный розовый цвет */
-.bg-brand-pink { 
-    background-color: #fb95a8; 
+/* Фирменный красный цвет (Гранат) */
+.bg-brand-red { 
+    background-color: #d92538; 
 }
-.text-brand-pink { 
-    color: #fb95a8; 
+.text-brand-red { 
+    color: #d92538; 
 }
 
 /* Плавная прокрутка к разделам (чтобы шапка не перекрывала заголовки) */
